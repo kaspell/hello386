@@ -1,0 +1,17 @@
+[package]
+name = "rs_kern"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[lib]
+name = "rs_kern"
+crate-type = ["staticlib"]
+path="kernel.rs"

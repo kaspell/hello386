@@ -1,0 +1,7 @@
+# .cargo/config.toml
+
+[build]
+target = "i386-elf.json"
+
+[unstable]
+build-std = ["core", "compiler_builtins"]
